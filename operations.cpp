@@ -3,7 +3,7 @@
 
 // ----- 1 -----
 
-float average(std::vector<double> v) {
+double average(std::vector<double> v) {
     int result = 0;
 
     for(int i = 0; i < v.size(); i++) {
@@ -13,7 +13,7 @@ float average(std::vector<double> v) {
     return result/v.size();
 }
 
-float standardDeviation(std::vector<double> v) {
+double standardDeviation(std::vector<double> v) {
     float sum = 0.0, mean, standardDeviation = 0.0;
     int i;
 
@@ -23,7 +23,7 @@ float standardDeviation(std::vector<double> v) {
 
     mean = sum / v.size();
 
-    for(i = 0; i < v.size(); ++i) {
+    for(i = 0; i < v.size(); i++) {
         standardDeviation += pow(v[i] - mean, 2);
     }
 
@@ -41,6 +41,17 @@ double binomialCoefficient(double n1, double k1) {
 
 double bernoulliTrial(double n, double k, double p) {
     return binomialCoefficient(n, k) * pow(p, k) * pow(1 - p, n - k);
+}
+
+// ----- 4 -----
+
+double factorial(double n) {
+    return (n == 1 || n == 0) ? 1 : factorial(n - 1) * n;
+}
+
+double poissonDistribution(double occurrences, double poissonProbability) {
+    if(occurrences == 0) occurrences = 1;
+    return (pow(exp(1.0), -poissonProbability) * pow(poissonProbability, occurrences)) / factorial(occurrences);
 }
 
 // ----- 5 -----

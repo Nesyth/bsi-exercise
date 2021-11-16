@@ -2,6 +2,7 @@
 
 #include "headers/manual_switches.h"
 #include "headers/probability_insulators.h"
+#include "headers/transformers_failure.h"
 #include "headers/constant_failure_rate.h"
 
 using namespace std;
@@ -14,7 +15,7 @@ int main() {
         cout << "1.  Manual Switches\n";
         cout << "2.  Probability Insulators\n";
         cout << "3.  xxx\n";
-        cout << "4.  xxx\n";
+        cout << "4.  Transformers Failure\n";
         cout << "5.  Constant Failure Rate\n";
         cout << "\n";
         cout << "9.  Exit\n";
@@ -34,7 +35,7 @@ int main() {
                 cout << "todo";
                 break;
             case '4':
-                cout << "todo";
+                transformers_failure();
                 break;
             case '5':
                 constant_failure_rate();
