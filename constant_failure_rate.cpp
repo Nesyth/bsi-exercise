@@ -19,5 +19,5 @@ void constant_failure_rate() {
     double lowerRate = failureRate(probabilityYears - 1, probabilityPerYears) * probabilityUnits - originalRate;
 
     cout << "No. of units in service after " << probabilityYears << " years is " << originalRate <<
-    "\nNo. of units that failed in Year " << probabilityYears << " is " << lowerRate;
+    "\nNo. of units that failed in Year " << probabilityYears << " is " << lowerRate << "\n\n";
 }

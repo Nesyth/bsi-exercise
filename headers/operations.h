@@ -8,8 +8,8 @@ float standardDeviation(std::vector<float> v);
 
 // ----- 2 -----
 
-long double binomialCoefficient(long double n1, long double k1);
-long double bernoulliTrial(long double n, long double k, long double p);
+double binomialCoefficient(double n1, double k1);
+double bernoulliTrial(double n, double k, double p);
 
 // ----- 5 -----
 

@@ -32,14 +32,14 @@ float standardDeviation(std::vector<float> v) {
 
 // ----- 2 -----
 
-long double binomialCoefficient(long double n1, long double k1) {
+double binomialCoefficient(double n1, double k1) {
     if (k1 == 0 || k1 == n1)
         return 1;
 
     return binomialCoefficient(n1 - 1, k1 - 1) + binomialCoefficient(n1 - 1, k1);
 }
 
-long double bernoulliTrial(long double n, long double k, long double p) {
+double bernoulliTrial(double n, double k, double p) {
     return binomialCoefficient(n, k) * pow(p, k) * pow(1 - p, n - k);
 }
 
