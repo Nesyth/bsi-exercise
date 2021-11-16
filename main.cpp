@@ -1,18 +1,12 @@
 #include <iostream>
 
+#include "headers/manual_switches.h"
 #include "headers/probability_insulators.h"
 #include "headers/constant_failure_rate.h"
-#include "headers/operations.h"
 
 using namespace std;
 
 int main() {
-//    int input;
-//    vector<float> v;
-//    while(cin >> input)
-//        v.push_back(input);
-//    cout << average(v) << endl << standardDeviation(v);
-
     char selection;
 
     do {
@@ -31,7 +25,7 @@ int main() {
 
         switch (selection) {
             case '1':
-                cout << "todo";
+                manual_switches();
                 break;
             case '2':
                 probability_insulators();

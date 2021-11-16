@@ -3,8 +3,8 @@
 
 // ----- 1 -----
 
-float average(std::vector<float> v);
-float standardDeviation(std::vector<float> v);
+float average(std::vector<double> v);
+float standardDeviation(std::vector<double> v);
 
 // ----- 2 -----
 

@@ -3,7 +3,7 @@
 
 // ----- 1 -----
 
-float average(std::vector<float> v) {
+float average(std::vector<double> v) {
     int result = 0;
 
     for(int i = 0; i < v.size(); i++) {
@@ -13,7 +13,7 @@ float average(std::vector<float> v) {
     return result/v.size();
 }
 
-float standardDeviation(std::vector<float> v) {
+float standardDeviation(std::vector<double> v) {
     float sum = 0.0, mean, standardDeviation = 0.0;
     int i;
 
