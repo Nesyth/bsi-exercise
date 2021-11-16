@@ -3,4 +3,4 @@ project(bsi_exercise)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(bsi_exercise main.cpp)
+add_executable(bsi_exercise main.cpp headers/operations.h probability_insulators.cpp headers/probability_insulators.h operations.cpp manual_switches.cpp headers/manual_switches.h)
