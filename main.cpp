@@ -1,6 +1,8 @@
 #include <iostream>
 
 #include "headers/probability_insulators.h"
+#include "headers/constant_failure_rate.h"
+#include "headers/operations.h"
 
 using namespace std;
 
@@ -15,7 +17,7 @@ int main() {
 //    cin >> n >> k;
 //    cout << binomialCoefficient(n, k);
 
-    cout << probability_insulators();
+    constant_failure_rate();
     return 0;
 }
 

@@ -1,7 +1,7 @@
-#include <math.h>
+#include <cmath>
 #include <vector>
 
-// ----- 1 ------
+// ----- 1 -----
 
 float average(std::vector<float> v) {
     int result = 0;
@@ -30,7 +30,7 @@ float standardDeviation(std::vector<float> v) {
     return sqrt(standardDeviation / v.size());
 }
 
-// ----- 2 ------
+// ----- 2 -----
 
 long double binomialCoefficient(long double n1, long double k1) {
     if (k1 == 0 || k1 == n1)
@@ -41,4 +41,11 @@ long double binomialCoefficient(long double n1, long double k1) {
 
 long double bernoulliTrial(long double n, long double k, long double p) {
     return binomialCoefficient(n, k) * pow(p, k) * pow(1 - p, n - k);
+}
+
+// ----- 5 -----
+
+double failureRate(double years, double perYear) {
+    double eConstant = exp(1.0);
+    return pow(eConstant, -perYear * years);
 }
