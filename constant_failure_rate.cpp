@@ -9,15 +9,15 @@ void constant_failure_rate() {
     cout << "How many units: ";
     cin >> probabilityUnits;
 
+    cout << "Failure rate per year (0.00): ";
+    cin >> probabilityPerYears;
+
     cout << "How many years: ";
     cin >> probabilityYears;
-
-    cout << "How many failures per year: ";
-    cin >> probabilityPerYears;
 
     double originalRate = failureRate(probabilityYears, probabilityPerYears) * probabilityUnits;
     double lowerRate = failureRate(probabilityYears - 1, probabilityPerYears) * probabilityUnits - originalRate;
 
-    cout << "No. of units in service after " << probabilityYears << " years is " << originalRate <<
+    cout << "\nNo. of units in service after " << probabilityYears << " years is " << originalRate <<
     "\nNo. of units that failed in Year " << probabilityYears << " is " << lowerRate << "\n\n";
 }

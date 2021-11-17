@@ -6,7 +6,7 @@ using namespace std;
 void transformers_failure() {
     double transformerFailureRate, transformerOccurrences, transformerMultiply;
 
-    cout << "What's the average probability of the event happening: ";
+    cout << "What's the average probability of the event happening (0.00): ";
     cin >> transformerFailureRate;
 
     cout << "Time multiplied (default = 1): ";
@@ -15,6 +15,6 @@ void transformers_failure() {
     cout << "For how many occurrences you want to calculate the probability: ";
     cin >> transformerOccurrences;
 
-    cout << "The probability is " <<
+    cout << "\nThe probability is " <<
     poissonDistribution(transformerOccurrences, transformerMultiply *  transformerFailureRate) << "\n\n";
 }

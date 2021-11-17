@@ -12,6 +12,6 @@ void obeying_exponential_law() {
     cout << "Multiply the timespan by (default = 1): ";
     cin >> obeyingTime;
 
-    cout << "Probability of the event happening in provided timespan is " <<
+    cout << "\nProbability of the event happening in provided timespan is " <<
     obeyExponentialLaw(obeyingTime, obeyingPercentage) << "\n\n";
 }

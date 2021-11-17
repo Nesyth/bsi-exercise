@@ -3,8 +3,8 @@
 
 // ----- manual_switches -----
 
-float average(std::vector<double> v);
-float standardDeviation(std::vector<double> v);
+double average(std::vector<double> v);
+double standardDeviation(std::vector<double> v);
 
 // ----- probability_insulators -----
 

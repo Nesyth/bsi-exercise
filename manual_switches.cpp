@@ -15,6 +15,6 @@ void manual_switches() {
             break;
     }
 
-    cout << "Average between maintenance actions is " << average(v) << " years, while standard deviations equals " <<
+    cout << "\nAverage between maintenance actions is " << average(v) << " years, while standard deviations equals " <<
     standardDeviation(v) << "\n\n";
 }

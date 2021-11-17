@@ -22,6 +22,6 @@ void probability_insulators() {
         tempInsulatorsDef++;
     }
 
-    cout << "Probability of finding " << insulatorsDef << " or more in a string of " << insulatorsAll << " equals " <<
+    cout << "\nProbability of finding " << insulatorsDef << " or more in a string of " << insulatorsAll << " equals " <<
     result << "\n\n";
 }
