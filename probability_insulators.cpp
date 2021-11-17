@@ -3,6 +3,14 @@
 
 using namespace std;
 
+/**
+ * The function is meant to calculate:
+ *
+ * It is known that 10% of the insulators are defective.
+ *
+ * What is the probability off finding three or more defective insulators in a string of five?
+ */
+
 void probability_insulators() {
     double insulatorsAll, insulatorsDef, insulatorsDefPercentage, result = 0;
 

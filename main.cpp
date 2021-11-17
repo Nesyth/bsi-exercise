@@ -8,6 +8,16 @@
 
 using namespace std;
 
+/**
+ * @author Mikołaj Jakubowski <s18860@pjwstk.edu.pl>
+ * @author Kamil Głowienke <s21683@pjwstk.edu.pl>
+ * @version 1.0
+ *
+ * @section DESCRIPTION
+ *
+ * Main function provides simple UI for user to move around coded exercises.
+ */
+
 int main() {
     char selection;
 

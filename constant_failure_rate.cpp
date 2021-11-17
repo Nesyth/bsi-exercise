@@ -3,6 +3,15 @@
 
 using namespace std;
 
+/**
+ * The function is meant to calculate:
+ *
+ * One thousand new OCRs are put in service. They have a constant failure rate of 0.05 per year.
+ *
+ * How many units of the original 1000 will still be in service after 5 years?
+ * How many of the original will fail in Year 5?
+ */
+
 void constant_failure_rate() {
     double probabilityUnits, probabilityYears, probabilityPerYears;
 
