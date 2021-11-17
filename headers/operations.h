@@ -1,22 +1,26 @@
 #ifndef OPERATIONS_H
 #define OPERATIONS_H
 
-// ----- 1 -----
+// ----- manual_switches -----
 
 float average(std::vector<double> v);
 float standardDeviation(std::vector<double> v);
 
-// ----- 2 -----
+// ----- probability_insulators -----
 
 double binomialCoefficient(double n1, double k1);
 double bernoulliTrial(double n, double k, double p);
 
-// ----- 4 -----
+// ----- obeying_exponential_law -----
+
+double obeyExponentialLaw(double timespan, double probability);
+
+// ----- transformers_failure -----
 
 double factorial(double n);
 double poissonDistribution(double occurrences, double poisson);
 
-// ----- 5 -----
+// ----- constant_failure_rate -----
 
 double failureRate(double years, double perYear);
 

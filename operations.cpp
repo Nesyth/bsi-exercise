@@ -1,7 +1,7 @@
 #include <cmath>
 #include <vector>
 
-// ----- 1 -----
+// ----- manual_switches -----
 
 double average(std::vector<double> v) {
     int result = 0;
@@ -30,7 +30,7 @@ double standardDeviation(std::vector<double> v) {
     return sqrt(standardDeviation / v.size());
 }
 
-// ----- 2 -----
+// ----- probability_insulators -----
 
 double binomialCoefficient(double n1, double k1) {
     if (k1 == 0 || k1 == n1)
@@ -43,7 +43,17 @@ double bernoulliTrial(double n, double k, double p) {
     return binomialCoefficient(n, k) * pow(p, k) * pow(1 - p, n - k);
 }
 
-// ----- 4 -----
+// ----- obeying_exponential_law -----
+
+double obeyExponentialLaw(double timespan, double probability) {
+    double j = probability;
+    for(int i = 0; i < timespan - 1; i++) {
+        j *= probability;
+    }
+    return j;
+}
+
+// ----- transformers_failure -----
 
 double factorial(double n) {
     return (n == 1 || n == 0) ? 1 : factorial(n - 1) * n;
@@ -54,7 +64,7 @@ double poissonDistribution(double occurrences, double poissonProbability) {
     return (pow(exp(1.0), -poissonProbability) * pow(poissonProbability, occurrences)) / factorial(occurrences);
 }
 
-// ----- 5 -----
+// ----- constant_failure_rate -----
 
 double failureRate(double years, double perYear) {
     double eConstant = exp(1.0);

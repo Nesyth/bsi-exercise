@@ -2,6 +2,7 @@
 
 #include "headers/manual_switches.h"
 #include "headers/probability_insulators.h"
+#include "headers/obeying_exponential_law.h"
 #include "headers/transformers_failure.h"
 #include "headers/constant_failure_rate.h"
 
@@ -12,11 +13,11 @@ int main() {
 
     do {
         cout << "=================================\n";
-        cout << "1.  Manual Switches\n";
-        cout << "2.  Probability Insulators\n";
-        cout << "3.  xxx\n";
-        cout << "4.  Transformers Failure\n";
-        cout << "5.  Constant Failure Rate\n";
+        cout << "1.  Manual Switches (3.1)\n";
+        cout << "2.  Probability Insulators (3.2)\n";
+        cout << "3.  Transformers Failure (3.3)\n";
+        cout << "4.  Obeying Exponential Law (2.1)\n";
+        cout << "5.  Constant Failure Rate (3.5)\n";
         cout << "\n";
         cout << "9.  Exit\n";
         cout << "=================================\n";
@@ -32,10 +33,10 @@ int main() {
                 probability_insulators();
                 break;
             case '3':
-                cout << "todo";
+                transformers_failure();
                 break;
             case '4':
-                transformers_failure();
+                obeying_exponential_law();
                 break;
             case '5':
                 constant_failure_rate();
