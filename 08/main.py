@@ -102,7 +102,7 @@ def blowfish():
         print(f'Decrypted message: {msgDecrypted}')
 
 def main():
-    """DES Algorithm, encrypts/decrypts the message by providing passphrase
+    """Main, generates a few prints and looks after user's input
     """
     choice = True
     while choice:
