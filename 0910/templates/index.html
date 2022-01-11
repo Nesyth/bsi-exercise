@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if user %}
+    <div>
+      <h1>Logged in! </h1>
+      {% for i in user%}
+        <img src={{ i.picture }}></img>
+        <p>{{ i.name }}</p>
+        <p>{{ i.email }}</p>
+      {% endfor %}
+      <!-- <p>User & Token:</p>
+      <pre style="width: auto; white-space: normal !important; word-wrap: break-word;">
+        {{ user|tojson }}
+      </pre> -->
+      <h2>
+        <a href="/logout">Logout</a>
+      </h2>
+    </div>
+  {% else %}
+    <h2>
+      <a href="/google">Login</a>
+    </h2>
+  {% endif %}
+{% endblock %}
